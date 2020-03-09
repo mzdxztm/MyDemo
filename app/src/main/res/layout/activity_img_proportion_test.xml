@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="一张图片" />
+
+        <com.example.ztm.mydemo.view.Img1SquareView
+            android:id="@+id/img1_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="两张图片" />
+
+        <com.example.ztm.mydemo.view.Img2SquareView
+            android:id="@+id/img2_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="三张图片" />
+
+        <com.example.ztm.mydemo.view.Img3SquareView
+            android:id="@+id/img3_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="三张图片" />
+
+        <com.example.ztm.mydemo.view.Img1L2SSquareView
+            android:id="@+id/imglL2s_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="三张图片" />
+
+        <com.example.ztm.mydemo.view.Img1L2SView
+            android:id="@+id/imglL2s2_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="四张图片" />
+
+        <com.example.ztm.mydemo.view.Img1L3SSquareView
+            android:id="@+id/imglL3s_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="四张图片" />
+
+        <com.example.ztm.mydemo.view.Img4SquareView
+            android:id="@+id/img4_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,2 @@
+include ':gsyvideoplayertest', ':anim'
+include /*':app', */  ':app2'

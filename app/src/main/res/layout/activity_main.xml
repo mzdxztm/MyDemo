@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_referesh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="刷新测试" />
+
+    <Button
+        android:id="@+id/btn_imgCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片查看" />
+
+    <Button
+        android:id="@+id/btn_letterIndex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="字母索引" />
+
+    <Button
+        android:id="@+id/btn_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView嵌套"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_databinding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="databinding 测试"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_twowayview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="databinding twoway-view"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_imgProportion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片比例布局测试"
+        android:textAllCaps="false" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

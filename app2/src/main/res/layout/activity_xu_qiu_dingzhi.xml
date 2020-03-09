@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XuQiuDingzhiActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_headBg"
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+            android:background="@color/colorAccent"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:text="1、当您在线提交腕表需求相关信息后，我们将在2小时之内以电话或短信的方式告知您定制结果;
+\n2、我们在线客服的工作时间为：7*24H(周一~周日 00：00-24：00);
+\n3、如客服未能及时回复您，您可直接添加微信咨询。"
+            android:textColor="#ff000000"
+            android:textSize="10sp"
+            app:layout_constraintTop_toBottomOf="@+id/iv_headBg" />
+
+        <View
+            android:id="@+id/v_line1"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginTop="8dp"
+            android:background="#F2F2F2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_des" />
+
+        <TextView
+            android:id="@+id/tv_brandLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="品牌"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/v_line1" />
+
+        <EditText
+            android:id="@+id/et_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:hint="请填写腕表品牌"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ffb5b4b4"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/tv_brandLab"
+            app:layout_constraintTop_toBottomOf="@+id/v_line1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E6E6E6"
+            app:layout_constraintTop_toBottomOf="@id/et_brand" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="系列"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_brandLab" />
+
+        <EditText
+            android:id="@+id/et_serise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:hint="请填写系列"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ffb5b4b4"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/tv_brandLab"
+            app:layout_constraintTop_toBottomOf="@+id/tv_brandLab" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E6E6E6"
+            app:layout_constraintTop_toBottomOf="@id/et_serise" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="型号"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/et_serise" />
+
+        <EditText
+            android:id="@+id/et_xinghao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:hint="请填写型号"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ffb5b4b4"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/tv_brandLab"
+            app:layout_constraintTop_toBottomOf="@+id/et_serise" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E6E6E6"
+            app:layout_constraintTop_toBottomOf="@id/et_xinghao" />
+
+        <TextView
+            android:id="@+id/colorLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="成色"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/et_xinghao" />
+
+        <ImageView
+            android:id="@+id/iv_nextIcon"
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@+id/colorLab"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/colorLab" />
+
+        <TextView
+            android:id="@+id/tv_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="right"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="选择成色"
+            android:textColor="#ffb5b4b4"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/iv_nextIcon"
+            app:layout_constraintRight_toLeftOf="@id/iv_nextIcon"
+            app:layout_constraintStart_toEndOf="@+id/tv_brandLab"
+            app:layout_constraintTop_toBottomOf="@+id/et_xinghao" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E6E6E6"
+            app:layout_constraintTop_toBottomOf="@id/tv_color" />
+
+        <TextView
+            android:id="@+id/tv_functionColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="功能"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_color" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_functionColor"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_functionColor" />
+
+        <TextView
+            android:id="@+id/tv_function"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="right"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="选择功能"
+            android:textColor="#ffb5b4b4"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/iv_nextIcon"
+            app:layout_constraintRight_toLeftOf="@id/iv_nextIcon"
+            app:layout_constraintStart_toEndOf="@+id/tv_brandLab"
+            app:layout_constraintTop_toBottomOf="@+id/tv_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E6E6E6"
+            app:layout_constraintTop_toBottomOf="@id/tv_function" />
+
+        <TextView
+            android:id="@+id/tv_yearsLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="年份"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_function" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_yearsLab"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_yearsLab" />
+
+        <TextView
+            android:id="@+id/tv_years"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="right"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="选择年份"
+            android:textColor="#ffb5b4b4"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/iv_nextIcon"
+            app:layout_constraintRight_toLeftOf="@id/iv_nextIcon"
+            app:layout_constraintStart_toEndOf="@+id/tv_brandLab"
+            app:layout_constraintTop_toBottomOf="@+id/tv_function" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E6E6E6"
+            app:layout_constraintTop_toBottomOf="@id/tv_years" />
+
+        <TextView
+            android:id="@+id/tv_sexLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="男表/女表"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_years" />
+
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sexLab">
+
+            <RadioButton
+                android:id="@+id/rbtn_nan"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_single_select_tab_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="男   表"
+                android:textColor="#ff0a283a"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn_nv"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_single_select_tab_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="男   表"
+                android:textColor="#ff0a283a"
+                android:textSize="11sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_shapeLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="形状"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/rg_sex" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_shapeLab"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_shapeLab" />
+
+        <TextView
+            android:id="@+id/tv_shape"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="right"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="选择形状"
+            android:textColor="#ffb5b4b4"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_shapeLab"
+            app:layout_constraintEnd_toEndOf="@id/iv_nextIcon"
+            app:layout_constraintRight_toLeftOf="@id/iv_nextIcon"
+            app:layout_constraintStart_toEndOf="@+id/tv_brandLab" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E6E6E6"
+            app:layout_constraintTop_toBottomOf="@id/tv_shape" />
+
+        <TextView
+            android:id="@+id/tv_materialsLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="材料"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_shape" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_materialsLab"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_materialsLab" />
+
+        <TextView
+            android:id="@+id/tv_materials"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="right"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="选择材料"
+            android:textColor="#ffb5b4b4"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_materialsLab"
+            app:layout_constraintEnd_toEndOf="@id/iv_nextIcon"
+            app:layout_constraintRight_toLeftOf="@id/iv_nextIcon"
+            app:layout_constraintStart_toEndOf="@+id/tv_brandLab" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E6E6E6"
+            app:layout_constraintTop_toBottomOf="@id/tv_materials" />
+
+        <TextView
+            android:id="@+id/tv_xiangzhuanLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="镶钻/宝石"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_materials" />
+
+        <RadioGroup
+            android:id="@+id/rg_xiangzhuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_xiangzhuanLab">
+
+            <RadioButton
+                android:id="@+id/rbtn_yes"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_single_select_tab_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="是"
+                android:textColor="#ff0a283a"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn_no"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_single_select_tab_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="否"
+                android:textColor="#ff0a283a"
+                android:textSize="11sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="立即提交"
+            android:textColor="#ff000000"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/rg_xiangzhuan" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

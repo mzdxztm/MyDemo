@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SideIndexBar">
+        <attr name="cpIndexBarTextSize" format="reference|dimension" />
+        <attr name="cpIndexBarNormalTextColor" format="reference|color" />
+        <attr name="cpIndexBarSelectedTextColor" format="reference|color" />
+    </declare-styleable>
+
+
+</resources>
